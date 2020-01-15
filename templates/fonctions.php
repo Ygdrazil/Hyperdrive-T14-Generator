@@ -65,7 +65,7 @@ function genererCSSLien($ok){
       if(isset($_POST["italique"])){
         echo "\n\t\tfont-style: italic;";
       }
-      if(!isset($_POST["pasPareilP"])){
+      if(isset($_POST["pasPareilP"])){
         if(!empty($_POST["padding"])){
           echo "\n\t\tpadding:".$_POST["padding"]."px;";
         }
@@ -123,7 +123,7 @@ function genererCSSLien($ok){
       if(isset($_POST["italiqueS"])){
         echo "\n\t\tfont-style: italic;";
       }
-      if(!isset($_POST["pasPareilPS"])){
+      if(isset($_POST["pasPareilPS"])){
         if(!empty($_POST["paddingS"])){
           echo "\n\t\tpadding:".$_POST["paddingS"]."px;";
         }
@@ -169,7 +169,7 @@ function genererCSSMenus($ok){
     if (isset($_POST["centrage"])){
       echo"\n\t\tdisplay:flex;\n\t\tjustify-content: center;";
     }
-    if(!isset($_POST["pasPareilP"])){
+    if(isset($_POST["pasPareilP"])){
       if(!empty($_POST["padding"])){
         echo "\n\t\tpadding:".$_POST["padding"]."px;";
       }
@@ -237,7 +237,7 @@ if(isset($_POST) and !empty($_POST)){
     if(isset($_POST["italique"])){
       echo "\n\t\tfont-style: italic;";
     }
-    if(!isset($_POST["pasPareilP"])){
+    if(isset($_POST["pasPareilP"])){
       if(!empty($_POST["padding"])){
         echo "\n\t\tpadding:".$_POST["padding"]."px;";
       }
@@ -259,7 +259,7 @@ if(isset($_POST) and !empty($_POST)){
         echo "\n\tpadding:".$_POST["padding"]."px;";
       }
     }
-    if(!isset($_POST["pasPareilM"])){
+    if(isset($_POST["pasPareilM"])){
       if(!empty($_POST["margin"])){
         echo "\n\t\tmargin:".$_POST["margin"]."px;";
       }
@@ -317,7 +317,7 @@ if(isset($_POST) and !empty($_POST))  {
     if(isset($_POST["italiqueS"])){
       echo "\n\t\tfont-style: italic;";
     }
-    if(!isset($_POST["pasPareilPS"])){
+    if(isset($_POST["pasPareilPS"])){
       if(!empty($_POST["paddingS"])){
         echo "\n\t\tpadding:".$_POST["paddingS"]."px;";
       }
@@ -340,7 +340,7 @@ if(isset($_POST) and !empty($_POST))  {
       }
     }
 
-    if(!isset($_POST["pasPareilMS"])){
+    if(isset($_POST["pasPareilMS"])){
       if(!empty($_POST["marginS"])){
         echo "\n\t\tmargin:".$_POST["marginS"]."px;";
       }
