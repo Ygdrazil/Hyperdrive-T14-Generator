@@ -3,16 +3,13 @@
   Padding:0;
 } 
 
-@font-face
-{
-  font-family : "Star Jedi";
-  src: url("assets/Starjedi.ttf") format("truetype");
-}
-
 /* Header */
 
 header {
-  background-color: #82ACF6;
+  background-image: url("../img/starry.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
 
 #homeBtn {
@@ -20,11 +17,17 @@ header {
   animation: all ease 0.3s;
 }
 
+.generator
+{
+  display: flex;
+  flex-direction: row;
+}
+
 #websiteTitle {
   font-family: "Star Jedi", sans-serif;
   Text-align:center;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 245, 103);
   height: 150px;
   line-height: 150px;
   font-size: 28px;
@@ -45,8 +48,6 @@ main {
   width: auto; 
   padding: 50px;
 }
-
-
 
 .wrapper
 {
@@ -111,15 +112,6 @@ Nav > ul > a:hover > li {
 
 }
 
-@keyframes fadeIn {
-  0% {opacity: 0%;}
-  100% {opacity: 100%}
-}
-
-@keyframes fadeOut {
-  0% {opacity: 100%;}
-  100% {opacity: 0%;}
-}
 
 /* Active */
 
@@ -144,6 +136,14 @@ Nav > ul > a:active > li {
 }
 
 /***************************** Responsive */
+
+@media only screen and (max-width: 1030px)
+{
+  .generator {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media only screen and (max-width:740px){
 
@@ -187,6 +187,16 @@ Nav > ul > a:active > li {
     padding-left: 20px;
     padding-right: 20px;
     width: auto;
+    flex-direction: column;
+  }
+
+  .generator {
+    display: flex;
+    flex-direction: column;
+  }
+
+  fieldset {
+    flex-direction: column;
   }
 
   /* Animations responsives */
@@ -236,12 +246,7 @@ h3{
   margin : 15px 0px 15px 0px;
 }
 
-.generator
-{
-  width: auto;
-  display: flex;
-  flex-direction: row;
-}
+
 
 .option
 {
@@ -250,6 +255,7 @@ h3{
   width: auto;
   margin: 10px;
   padding: 10px;
+  min-width: 400px;
 }
 
 .rendu
@@ -262,25 +268,21 @@ h3{
 }
 
 #titleGenerator {
-text-align: center;
-padding-top: -20px; 
+  text-align: center;
+  padding-top: -20px; 
 }
 
 fieldset {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 10px;
-  flex-direction: row;
   margin : 8px 0px 8px 0px;
   width: 400px;
   border: none;
 }
 
-fieldset:nth-child(n) {
+/*fieldset:nth-child(n) {
   display:flex;
   flex-direction: column;
-}
+}*/
 
 #checkboxWrap {
   display: flex;
@@ -306,6 +308,12 @@ input[type=text]::placeholder {
 input[type=checkbox] {
   margin: 5px;
 }
+
+input[type=number] {
+  width: 50px;
+}
+
+
 
  @media only screen and (max-width:740px){
   .option{
@@ -346,13 +354,6 @@ form {
 	font-weight: bold;
 	padding:8px;
 }
-
-/*@media only screen and (max-width:740px){
-  .rendu{
-    flex: 1 1 auto;
-    font-size: 12px;
-  }
-}*/
   
 .erreur{
   color: red;
@@ -367,41 +368,45 @@ h5{
 textarea{
   margin-top: 50px;
 }
+
 @media only screen and (max-width:740px){
   textarea{
     width: 25em;
   }
 }
 @media only screen and (max-width:740px){
-iframe{
-  width: 80%;
-  height: 20%;
-}
+  iframe{
+    width: 80%;
+    height: 20%;
+  }
 }
 
 footer{
   text-align: center;
-  background-color: #82ACF6;
+  color: rgb(255, 245, 103);
   padding: 1rem;
   text-align: center;
   border-top : solid black 2px;
+  background-image: url("../img/starry.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
 }
 
 .menuRendu {
   margin-left: 20px;
 }
 
+/************************************************************* Assets*/
 
+@font-face
+{
+  font-family : "Star Jedi";
+  src: url("assets/Starjedi.ttf") format("truetype");
+}
 
-
-
-
-
-
-
-
-
-
+/************************************************************* Animations */
+/****************************************** SmoothState */
 
 @-webkit-keyframes fadeIn {
     0% {
