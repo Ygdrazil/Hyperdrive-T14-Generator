@@ -236,20 +236,37 @@ h3{
 .generator
 {
   width: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .option
 {
+  border: solid 1px black;
+  width: auto;
+  margin: 10px;
+}
 
+.rendu
+{
+  border: solid 1px black;
+  width: auto;
+  margin: 10px;  
+}
+
+#titleGenerator {
+text-align: center;
 }
 
 fieldset {
   display: flex;
-  border: solid black 1px;
   align-items: center;
   justify-content: center;
   padding: 10px;
   flex-direction: row;
+  margin : 8px 0px 8px 0px;
+  width: 400px;
+  border: none;
 }
 
 fieldset:nth-child(n) {
@@ -299,7 +316,6 @@ legend{
 
 fieldset
 {
-  margin : 8px 0px 8px 0px;
 }
 
 fieldset > *
@@ -307,10 +323,6 @@ fieldset > *
   margin : 8px 0px 8px 0px;
 }
 
-.rendu
-{
-  margin-top: 50px;
-}
 
 .validation{
 	font-family: Arial ;
@@ -363,7 +375,9 @@ footer{
   border-top : solid black 2px;
 }
 
-
+.menuRendu {
+  margin-left: 20px;
+}
 
 
 

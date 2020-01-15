@@ -1,19 +1,20 @@
 
-<section class="generator">  <!-- C'est la section générale du générateur de liens -->
+<?php
+if ($_GET["id"] == 'liens'){
+  echo '<h2 id="titleGenerator">Générateur T14 de liens</h2>';
+}
+if ($_GET["id"] == 'menus'){
+  echo '<h2 id="titleGenerator">Générateur T14 de menus</h2>';
+}
+if ($_GET["id"] == 'boutons'){
+  echo '<h2 id="titleGenerator">Générateur T14 de boutons</h2>';
+}
+?>
 
+<section class="generator">  <!-- C'est la section générale du générateur de liens -->
   <!-- On Commence par les options que l'on mettra sur le lien-->
   <section class="option">
-    <?php
-    if ($_GET["id"] == 'liens'){
-      echo '<h2>Générateur T14 de liens</h2>';
-    }
-    if ($_GET["id"] == 'menus'){
-      echo '<h2>Générateur T14 de menus</h2>';
-    }
-    if ($_GET["id"] == 'boutons'){
-      echo '<h2>Générateur T14 de boutons</h2>';
-    }
-    ?>
+
     <h3>Options :</h3>
     <?php
 
@@ -258,9 +259,9 @@
       <br>
       <p>
         <!--------------------------- On choisis les MARGES INTERNES | STATIQUE ----------------------->
-        <h5>
+        <legend>
           Les marges internes
-        </h5>
+        </legend>
 
         <p id="paddingBase">
           <label for="padding">Marges intérieures en px : </label>
@@ -331,9 +332,9 @@
 
           <p>
 					<!--------------------------- On choisis les MARGES EXTERNE | STATIQUE ----------------------->
-					<h5>
+					<legend>
 						Les marges externes
-					</h5>
+					</legend>
 
 					<p id="marginBase">
 						<label for="margin">Marges externes en px : </label>
@@ -546,9 +547,9 @@
         <br>
         <p>
           <!--------------------------- On choisis les MARGES INTERNES | SURVOL ----------------------->
-          <h5>
+          <legend>
             Les marges internes
-          </h5>
+          </legend>
 
           <p id="paddingBaseS">
             <label for="paddingS">Marges intérieures en px : </label>
@@ -621,9 +622,9 @@
 
             <p>
           <!--------------------------- On choisis les MARGES EXTERNE | SURVOL ----------------------->
-          <h5>
+          <legend>
             Les marges externes
-          </h5>
+          </legend>
 
           <p id="marginBaseS">
             <label for="marginS">Marges externes en px : </label>

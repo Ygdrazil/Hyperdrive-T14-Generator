@@ -21,7 +21,7 @@ if (isset($_GET["id"])){
     for ($i=1; $i <= 3 ; $i++) { 
       echo "<li class='liRendu'><a href='$i' class='lienRendu'>$i</a></li>";
     }
-    echo '</ul></section>';
+    echo '</ul>';
   }
   elseif($_GET["id"] == "liens"){
     echo '
