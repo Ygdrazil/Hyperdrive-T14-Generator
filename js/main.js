@@ -84,3 +84,4 @@ checkboxCtrl('#pasPareilMS', '#marginBaseS', '#marginAvanceS');
 
 checkboxSurvol();
 
+document.getElementById("btnRendu").addEventListener("click", checkboxSurvol());

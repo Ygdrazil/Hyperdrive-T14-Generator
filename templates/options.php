@@ -693,6 +693,6 @@
           </div>
 
         </fieldset>
-        <input type="submit" name="envoyer" value="Faire le rendu" class="validation">
+        <input id="btnRendu" type="submit" name="envoyer" value="Faire le rendu" class="validation">
       </form>
   </section>
