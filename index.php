@@ -74,15 +74,17 @@
               if(empty($_GET)){
                 include("templates/home.html");
               }
-
               else{
 
                 $renduPrisEnCharge=array("menus", "boutons", "liens");
                 if(in_array($_GET["id"], $renduPrisEnCharge)){
                   include("templates/page.php");
                 }
-                elseif($_GET["id"] == "about"){
+                else if($_GET["id"] == "about"){
                   include("templates/about.php");
+                }
+                else if($_GET["id"] == "tuto"){
+                  include("templates/tuto.html");
                 }
               }
              ?>
