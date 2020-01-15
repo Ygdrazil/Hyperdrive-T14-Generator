@@ -116,7 +116,7 @@
 			 		<?php echo $personneCV["nom"]; ?>
 			 	</td>
 			 	<td>
-			 		<a href="<?php echo $personneCV["lienVersCV"]; ?>">CV</a>
+			 		<a href="<?php echo $personneCV["lienVersCV"]; ?>" class="no-smoothState">CV</a>
 			 	</td>
 			 </tr>
 
