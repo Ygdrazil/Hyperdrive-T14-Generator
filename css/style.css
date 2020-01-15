@@ -46,15 +46,18 @@ main {
   padding: 50px;
 }
 
+
+
 .wrapper
 {
-  min-height : 60vh;
+  min-height : 50vh;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-right: solid black 2px;
   border-left: solid black 2px;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px; 
   width: 90vw;
 }
 
@@ -260,6 +263,7 @@ h3{
 
 #titleGenerator {
 text-align: center;
+padding-top: -20px; 
 }
 
 fieldset {
