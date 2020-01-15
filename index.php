@@ -93,13 +93,29 @@
       </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="js/jquery.smoothState.min.js"></script>
-    <script src="js/main.js"></script>
+    
 
     <footer>
       &copy IUT Annecy 2020
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="js/jquery.smoothState.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      checkboxCtrl('#pasPareilP','#paddingBase', '#paddingAvance' );
+      checkboxCtrl('#pasPareilPS', '#paddingBaseS', '#paddingAvanceS');
+
+    <?php 
+      if (!empty($_GET) and $_GET["id"] == "menu") {
+    ?>
+      checkboxCtrl('#pasPareilM', '#marginBase', '#marginAvance');
+      checkboxCtrl('#pasPareilMS', '#marginBaseS', '#marginAvanceS');
+    <?php
+      }
+     ?>
+     checkboxSurvol();
+    </script>
   </body>
 </html>
