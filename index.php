@@ -14,6 +14,7 @@
           T-14 Hyperdrive Generator
         </h1>
       </a> 
+      <h2>Générateur de code HTML/CSS</h2>
     </header>
     <div id="main">
       <nav>

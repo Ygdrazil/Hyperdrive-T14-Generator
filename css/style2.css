@@ -31,22 +31,14 @@ header {
   Text-align:center;
   text-decoration: none;
   color: rgb(255, 245, 103);
-  height: 100px;
+  height: 150px;
   line-height: 150px;
   font-size: 28px;
   animation-name: titleOut;
   animation-duration: 0.5s;
 }
 
-header > h2 {
-  font-family: "Star Jedi", sans-serif;
-  text-align: center;
-  color: rgb(255, 245, 103);
-  padding-bottom: 10px; 
-  letter-spacing: 3px;
-  font-size: 20px;
-  margin-bottom: 0px; 
-}
+
 
 
 /************************************************************* Body & main content */
@@ -61,7 +53,6 @@ main {
   justify-content: center;
   width: auto; 
   padding: 50px;
-  margin-top: -10px; 
 }
 
 .wrapper
@@ -114,6 +105,20 @@ nav > ul > a {
 
 
 
+/************************************************************* Templates */
+
+h2{
+  margin: 20px;
+  color: #4a83ed;
+}
+h3{
+  margin:20px;
+  color: #793deb;
+}
+
+
+
+
 /************************************************************* Static Contents */
 
 #home_content
@@ -146,19 +151,6 @@ nav > ul > a {
   text-align: center;
 }
 
-.liTuto
-{
-  margin-left : 20px;
-}
-
-h2{
-  margin: 20px;
-  color: grey;
-}
-h3{
-  margin:20px;
-  color: black;
-}
 
 
 /************************************************************* Formulaires / Generateurs */
@@ -221,7 +213,9 @@ input[type=number] {
 
 legend{
   font-weight: bold;
-  color: grey; 
+  font-style: italic;
+  text-decoration: underline;
+  color: #1b489c; 
 }
 
 @media only screen and (max-width:740px){
@@ -244,8 +238,8 @@ form {
 .validation{
 	font-family: Arial ;
 	font-size:20px;
-	color:black;
-	background-color:grey;
+	color:#001577;
+	background-color:#91e3fb;
 	border-radius:13px;
 	text-decoration:none;
 	font-weight: bold;
@@ -342,7 +336,6 @@ footer{
     width: 100px;
     position: absolute;
     z-index: 1000;
-    position: fixed;
   }
 
   nav > ul {

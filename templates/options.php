@@ -29,16 +29,16 @@ if ($_GET["id"] == 'boutons'){
      if (isset($_GET["id"]) and $_GET["id"] == "menus"){
       echo '
       <fieldset>
-      <legend>
-      Style du Menu
-      </legend>
-      <p>
+        <legend>
+          Style du Menu
+        </legend>
+        <p>
       <!-- On prend la DISPOSITION DU MENU | MENU -->
-      <label for="disposition">
-      Disposition du menu
-      </label>
-      <select id="disposition" name="disposition">
-      <option value="colone" ';
+        <label for="disposition">
+          Disposition du menu
+        </label>
+        <select id="disposition" name="disposition">
+        <option value="colone" ';
       
       if (isset($_POST["disposition"]) and $_POST["disposition"] == "colone") {
         echo "selected";
