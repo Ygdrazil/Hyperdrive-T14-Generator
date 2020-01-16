@@ -7,14 +7,6 @@ if (isset($ok)) {
 }
 
 
-
-
-          // if (isset($_POST["nbLiens"]) and $ok) {
-          //  for ($i=1; $i <= $_POST["nbLiens"] ; $i++) { 
-          //    echo "<li class='liRendu'><a href='$i' class='lienRendu'>$i</a></li>";
-          //  }
-          // }
-          // else{
 if (isset($_GET["id"])){
   if($_GET["id"] == "menus"){
     echo '<ul class="menuRendu"> ';
@@ -26,11 +18,11 @@ if (isset($_GET["id"])){
   elseif($_GET["id"] == "liens"){
     echo '
     <a class="lienRendu" href="';
-    if(!empty($_POST['lien'])){ echo $_POST['lien']; } 
+    if(!empty($_POST['lien'])){ echo htmlspecialchars($_POST['lien']); } 
   else { echo 'https://i.imgflip.com/1e2xyl.jpg'; } 
 
   echo '" text-align: center;" >';
-  if(!empty($_POST["nom"])){ echo $_POST["nom"] ;} 
+  if(!empty($_POST["nom"])){ echo htmlspecialchars($_POST["nom"]) ;} 
   else{echo "Mon lien" ;}
 
   echo '</a>';
@@ -38,7 +30,7 @@ if (isset($_GET["id"])){
 elseif($_GET["id"] == "boutons"){
  echo "<button class='lienRendu'>";
  if (!empty($_POST["nom"])){
-  echo $_POST["nom"];
+  echo htmlspecialchars($_POST["nom"]);
 }
 else{
   echo "Mon bouton";
@@ -59,13 +51,13 @@ if (isset($_GET["id"])){
   if($_GET["id"] == "liens"){
     echo "<a class=\"lienRendu\" href='";
     if(!empty($_POST['lien']))
-      { echo $_POST['lien']; } 
+      { echo htmlspecialchars($_POST['lien']); } 
     else 
       { echo 'https://i.imgflip.com/1e2xyl.jpg'; }
     echo "' >";
 
     if(!empty($_POST["nom"]))
-      { echo $_POST["nom"] ;} 
+      { echo htmlspecialchars($_POST["nom"]) ;} 
 
     else
       {echo "Mon lien" ;}
@@ -82,7 +74,7 @@ if (isset($_GET["id"])){
 elseif($_GET["id"] == "boutons"){
   echo "<button class='lienRendu'>";
   if (!empty($_POST["nom"])){
-    echo $_POST["nom"];
+    echo htmlspecialchars($_POST["nom"]);
   }
   else{
     echo "Mon bouton";
