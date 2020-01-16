@@ -4,7 +4,7 @@
 	<section>
 		<h2>Version de l'application :</h2>
 		<p>
-			La version actuelle de l'application est <span style="font-weight: bold;color: #6ba8ed;">1.0F</span>
+			La version actuelle de l'application est <span style="font-weight: bold;color: black;">1.0F</span>
 		</p>
 		
 	</section>
