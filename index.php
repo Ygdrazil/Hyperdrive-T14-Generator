@@ -19,27 +19,32 @@
     <div id="main">
       <nav>
         <ul class="nav">
-          <a href="index.php?id=tuto" data-target="-1">
+          <a href="index.php?id=home" data-target="0">
+            <li <?php if(!empty($_GET)){ if($_GET["id"] == "home") echo "class='btnMenuActive'"; } ?>>
+              Accueil
+            </li>
+          </a>
+          <a href="index.php?id=tuto" data-target="1">
             <li <?php if(!empty($_GET)){ if($_GET["id"] == "tuto") echo "class='btnMenuActive'"; } ?>>
               Tutoriels
             </li>
           </a>
-          <a href="index.php?id=liens" data-target="1">
+          <a href="index.php?id=liens" data-target="2">
             <li <?php if(!empty($_GET)){ if($_GET["id"] == "liens") echo "class='btnMenuActive'"; } ?>>
               Liens
             </li>
           </a>
-          <a href="index.php?id=boutons" data-target="2">
+          <a href="index.php?id=boutons" data-target="3">
             <li <?php if(!empty($_GET)){ if($_GET["id"] == "boutons") echo "class='btnMenuActive'"; } ?>>
               Boutons
             </li>
           </a>
-          <a href="index.php?id=menus" data-target="3">
+          <a href="index.php?id=menus" data-target="4">
             <li <?php if(!empty($_GET)){ if($_GET["id"] == "menus") echo "class='btnMenuActive'"; } ?>>
               Menus
             </li>
           </a>
-          <a href="index.php?id=about" data-target="4">
+          <a href="index.php?id=about" data-target="5">
             <li <?php if(!empty($_GET)){ if($_GET["id"] == "about") echo "class='btnMenuActive'"; } ?>>
               À Propos
             </li>
@@ -50,20 +55,23 @@
       <?php 
       if(!empty($_GET)) {
         switch ($_GET["id"]) {
+          case 'home':
+          	echo " data-viewport='0'";
+          	break;
           case 'tuto':
-            echo " data-viewport='-1'";
-            break;
-          case 'liens':
             echo " data-viewport='1'";
             break;
-          case 'boutons':
+          case 'liens':
             echo " data-viewport='2'";
             break;
-          case 'menus':
+          case 'boutons':
             echo " data-viewport='3'";
             break;
-          case 'about':
+          case 'menus':
             echo " data-viewport='4'";
+            break;
+          case 'about':
+            echo " data-viewport='5'";
             break;
         }
       }
@@ -86,6 +94,9 @@
                 }
                 else if($_GET["id"] == "tuto"){
                   include("templates/tuto.html");
+                }
+                else if($_GET["id"] == "home"){
+                  include("templates/home.html");	
                 }
               }
              ?>
