@@ -11,13 +11,13 @@ if (isset($_GET["id"])){
   if($_GET["id"] == "menus"){
     echo '<ul class="menuRendu"> ';
     for ($i=1; $i <= 3 ; $i++) { 
-      echo "<li class='liRendu'><a href='#' class='lienRendu'>$i</a></li>";
+      echo "<li class='liRendu'><a href='#' class='lienRendu' >$i</a></li>";
     }
     echo '</ul>';
   }
   elseif($_GET["id"] == "liens"){
     echo '
-    <a class="lienRendu" href="';
+    <a target="1" class="lienRendu" href="';
     if(!empty($_POST['lien'])){ echo htmlspecialchars($_POST['lien']); } 
   else { echo 'https://i.imgflip.com/1e2xyl.jpg'; } 
 
@@ -49,7 +49,7 @@ echo '<!-- Dans la prochaine section on gère l\'affichage du code -->
 echo "<textarea cols='70' rows='30' readonly>";
 if (isset($_GET["id"])){
   if($_GET["id"] == "liens"){
-    echo "<a class=\"lienRendu\" href='";
+    echo "<a target='1' class=\"lienRendu\" href='";
     if(!empty($_POST['lien']))
       { echo htmlspecialchars($_POST['lien']); } 
     else 
