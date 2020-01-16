@@ -103,12 +103,17 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="js/jquery.smoothState.min.js"></script>
     <script src="js/main.js"></script>
+    <?php
+      if (!empty($_GET) and in_array($_GET["id"], $renduPrisEnCharge)) {
+        
+      
+    ?>
     <script type="text/javascript">
       checkboxCtrl('#pasPareilP','#paddingBase', '#paddingAvance' );
       checkboxCtrl('#pasPareilPS', '#paddingBaseS', '#paddingAvanceS');
 
     <?php 
-      if (!empty($_GET) and $_GET["id"] == "menu") {
+      if (!empty($_GET) and $_GET["id"] == "menus") {
     ?>
       checkboxCtrl('#pasPareilM', '#marginBase', '#marginAvance');
       checkboxCtrl('#pasPareilMS', '#marginBaseS', '#marginAvanceS');
@@ -117,5 +122,8 @@
      ?>
      checkboxSurvol();
     </script>
+    <?php
+      }
+    ?>
   </body>
 </html>

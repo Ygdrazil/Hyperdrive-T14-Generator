@@ -77,11 +77,5 @@ function checkboxSurvol() {
 
 }(jQuery));
 
-checkboxCtrl('#pasPareilP','#paddingBase', '#paddingAvance' );
-checkboxCtrl('#pasPareilM', '#marginBase', '#marginAvance');
-checkboxCtrl('#pasPareilPS', '#paddingBaseS', '#paddingAvanceS');
-checkboxCtrl('#pasPareilMS', '#marginBaseS', '#marginAvanceS');
 
-checkboxSurvol();
 
-document.getElementById("btnRendu").addEventListener("click", checkboxSurvol());
