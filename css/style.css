@@ -341,6 +341,7 @@ footer{
     width: 100px;
     position: absolute;
     z-index: 1000;
+    position: fixed;
   }
 
   nav > ul {
