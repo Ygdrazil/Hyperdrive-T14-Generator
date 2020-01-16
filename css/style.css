@@ -3,7 +3,10 @@
   Padding:0;
 } 
 
-/* Header */
+
+
+
+/************************************************************* Header */
 
 header {
   background-image: url("../img/starry.jpg");
@@ -35,7 +38,10 @@ header {
   animation-duration: 0.5s;
 }
 
-/* Body et main content */
+
+
+
+/************************************************************* Body & main content */
 
 body{
   font-family: 'Quicksand', sans-serif;
@@ -62,12 +68,10 @@ main {
   width: 90vw;
 }
 
-.GIF_tuto
-{
-  text-align: center;
-}
 
-/* Style boutons / Menu */
+
+
+/************************************************************* Style des menus */
 
 nav {
   width: auto;
@@ -98,126 +102,11 @@ nav > ul > a {
   text-align:center;
 } 
 
-/***************************** Animations*/
-
-/* Hovers */
-
-nav > ul > a:hover > li {
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  transition: all 500ms ease;
-  background-color: grey;
-}
-
-#websiteTitle:hover{
-  animation-name: titleIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-
-}
 
 
-/* Active */
 
-nav > ul > a:active > li {
-  background-color: white;
-}
+/************************************************************* Templates */
 
-.btnMenuActive {
-  background-color: grey;
-}
-
-/* Animations boutons */ 
-
-@keyframes titleIn {
-  0%   {letter-spacing: normal;}
-  100% {letter-spacing: 10px;}
-}
-
-@keyframes titleOut {
-  0% {letter-spacing: 10px;}
-  100% {letter-spacing: normal;}
-}
-
-/***************************** Responsive */
-
-@media only screen and (max-width: 1030px)
-{
-  .generator {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width:740px){
-
-  /* Titre Responsive */
-
-  header {
-    border-bottom: solid black 2px;
-  }
-
-  #websiteTitle {
-    font-size: 25px;
-  }
-
-  /* Menu Responsive */
-
-  nav {
-    /*transform: translateY(50px);*/
-    /*background-color: transparent;*/
-    width: 100px;
-    position: absolute;
-    z-index: 1000;
-  }
-
-  nav > ul {
-    flex-direction: column;
-    justify-content: left;
-  }
-
-  nav > ul > a:first-child > li {
-
-  }
-
-  nav > ul > a:last-child > li {
-  }
-
-  /* Responsive Content */
-
-  .wrapper
-  {
-    margin-left: 90px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: auto;
-    flex-direction: column;
-  }
-
-  .generator {
-    display: flex;
-    flex-direction: column;
-  }
-
-  fieldset {
-    flex-direction: column;
-  }
-
-  /* Animations responsives */
-
-  @keyframes titleIn {
-    0%   {letter-spacing: normal;}
-    100% {letter-spacing: 5px;}
-  }
-
-  @keyframes titleOut {
-    0% {letter-spacing: 5px;}
-    100% {letter-spacing: normal;}
-  } 
-}
-
-/***************************** Templates */
 h2{
   margin: 20px;
   color: #4a83ed;
@@ -226,6 +115,12 @@ h3{
   margin:20px;
   color: #793deb;
 }
+
+
+
+
+/************************************************************* Static Contents */
+
 #home_content
 {
   width: auto;
@@ -251,9 +146,14 @@ h3{
   margin : 15px 0px 15px 0px;
 }
 
-.liTuto{
-  margin-left: 20px;
+.GIF_tuto
+{
+  text-align: center;
 }
+
+
+
+/************************************************************* Formulaires / Generateurs */
 
 .option
 {
@@ -286,17 +186,8 @@ fieldset {
   border: none;
 }
 
-/*fieldset:nth-child(n) {
-  display:flex;
-  flex-direction: column;
-}*/
-
 #checkboxWrap {
   display: flex;
-}
-
-label {
-
 }
 
 input {
@@ -320,16 +211,6 @@ input[type=number] {
   width: 50px;
 }
 
-
-
- @media only screen and (max-width:740px){
-  .option{
-    /*flex: 1 1 auto;*/
-    width: 80%;
-    font-size: 12px;
-  }
-} 
-
 legend{
   font-weight: bold;
   font-style: italic;
@@ -337,9 +218,12 @@ legend{
   color: #1b489c; 
 }
 
-fieldset
-{
-}
+@media only screen and (max-width:740px){
+  .option{
+    width: 80%;
+    font-size: 12px;
+  }
+} 
 
 fieldset > *
 {
@@ -381,6 +265,7 @@ textarea{
     width: 25em;
   }
 }
+
 @media only screen and (max-width:740px){
   iframe{
     width: 80%;
@@ -400,11 +285,19 @@ footer{
   background-attachment: fixed;
 }
 
+
+
+
+/************************************************************* FIX */
+
 .menuRendu {
   margin-left: 20px;
 }
 
-/************************************************************* Assets*/
+
+
+
+/************************************************************* Assets */
 
 @font-face
 {
@@ -412,7 +305,130 @@ footer{
   src: url("assets/Starjedi.ttf") format("truetype");
 }
 
+
+
+
+/************************************************************* Responsive */
+
+@media only screen and (max-width: 1030px)
+{
+  .generator {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width:740px){
+
+  /**************************************** Titre Responsive */
+
+  header {
+    border-bottom: solid black 2px;
+  }
+
+  #websiteTitle {
+    font-size: 25px;
+  }
+
+  /**************************************** Menu Responsive */
+
+  nav {
+    width: 100px;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  nav > ul {
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  nav > ul > a:first-child > li {
+
+  }
+
+  nav > ul > a:last-child > li {
+  }
+
+  /**************************************** Responsive Content */
+
+  .wrapper
+  {
+    margin-left: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    flex-direction: column;
+  }
+
+  .generator {
+    display: flex;
+    flex-direction: column;
+  }
+
+  fieldset {
+    flex-direction: column;
+  }
+
+  /**************************************** Animations responsives */
+
+  @keyframes titleIn {
+    0%   {letter-spacing: normal;}
+    100% {letter-spacing: 5px;}
+  }
+
+  @keyframes titleOut {
+    0% {letter-spacing: 5px;}
+    100% {letter-spacing: normal;}
+  } 
+}
+
+
+
+
 /************************************************************* Animations */
+
+/****************************************** Boutons */
+
+/* Hovers */
+
+Nav > ul > a:hover > li {
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background-color: grey;
+}
+
+#websiteTitle:hover{
+  animation-name: titleIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+
+}
+
+/* Active */
+
+Nav > ul > a:active > li {
+  background-color: white;
+}
+
+.btnMenuActive {
+  background-color: grey;
+}
+
+/* Animations boutons */ 
+
+@keyframes titleIn {
+  0%   {letter-spacing: normal;}
+  100% {letter-spacing: 10px;}
+}
+
+@keyframes titleOut {
+  0% {letter-spacing: 10px;}
+  100% {letter-spacing: normal;}
+}
+
 /****************************************** SmoothState */
 
 @-webkit-keyframes fadeIn {
