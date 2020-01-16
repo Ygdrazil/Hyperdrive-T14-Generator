@@ -66,9 +66,6 @@ function genererCSSLien($ok){
         echo "\n\t\tfont-style: italic;";
       }
       if(isset($_POST["pasPareilP"])){
-        if(!empty($_POST["padding"])){
-          echo "\n\t\tpadding:".$_POST["padding"]."px;";
-        }
         if(!empty($_POST["padding-top"])){
           echo "\n\t\tpadding-top:".$_POST["padding-top"]."px;";
         }
@@ -79,12 +76,12 @@ function genererCSSLien($ok){
           echo "\n\t\tpadding-right:".$_POST["padding-right"]."px;";
         }
         if(!empty($_POST["padding-left"])){
-          echo "\n\tpadding-left:".$_POST["padding-left"]."px;";
+          echo "\n\t\tpadding-left:".$_POST["padding-left"]."px;";
         }
       }
       else{
         if(!empty($_POST["padding"])){
-          echo "\n\tpadding:".$_POST["padding"]."px;";
+          echo "\n\t\tpadding:".$_POST["padding"]."px;";
         }
       }
     }
@@ -124,9 +121,6 @@ function genererCSSLien($ok){
         echo "\n\t\tfont-style: italic;";
       }
       if(isset($_POST["pasPareilPS"])){
-        if(!empty($_POST["paddingS"])){
-          echo "\n\t\tpadding:".$_POST["paddingS"]."px;";
-        }
         if(!empty($_POST["padding-topS"])){
           echo "\n\t\tpadding-top:".$_POST["padding-topS"]."px;";
         }
@@ -170,9 +164,7 @@ function genererCSSMenus($ok){
       echo"\n\t\tdisplay:flex;\n\t\tjustify-content: center;";
     }
     if(isset($_POST["pasPareilP"])){
-      if(!empty($_POST["padding"])){
-        echo "\n\t\tpadding:".$_POST["padding"]."px;";
-      }
+
       if(!empty($_POST["padding-top"])){
         echo "\n\t\tpadding-top:".$_POST["padding-top"]."px;";
       }
@@ -238,9 +230,6 @@ if(isset($_POST) and !empty($_POST)){
       echo "\n\t\tfont-style: italic;";
     }
     if(isset($_POST["pasPareilP"])){
-      if(!empty($_POST["padding"])){
-        echo "\n\t\tpadding:".$_POST["padding"]."px;";
-      }
       if(!empty($_POST["padding-top"])){
         echo "\n\t\tpadding-top:".$_POST["padding-top"]."px;";
       }
@@ -260,9 +249,7 @@ if(isset($_POST) and !empty($_POST)){
       }
     }
     if(isset($_POST["pasPareilM"])){
-      if(!empty($_POST["margin"])){
-        echo "\n\t\tmargin:".$_POST["margin"]."px;";
-      }
+
       if(!empty($_POST["margin-top"])){
         echo "\n\t\tmargin-top:".$_POST["margin-top"]."px;";
       }
@@ -318,9 +305,7 @@ if(isset($_POST) and !empty($_POST))  {
       echo "\n\t\tfont-style: italic;";
     }
     if(isset($_POST["pasPareilPS"])){
-      if(!empty($_POST["paddingS"])){
-        echo "\n\t\tpadding:".$_POST["paddingS"]."px;";
-      }
+
       if(!empty($_POST["padding-topS"])){
         echo "\n\t\tpadding-top:".$_POST["padding-topS"]."px;";
       }
@@ -341,9 +326,7 @@ if(isset($_POST) and !empty($_POST))  {
     }
 
     if(isset($_POST["pasPareilMS"])){
-      if(!empty($_POST["marginS"])){
-        echo "\n\t\tmargin:".$_POST["marginS"]."px;";
-      }
+
       if(!empty($_POST["margin-top"])){
         echo "\n\t\tmargin-top:".$_POST["margin-topS"]."px;";
       }
