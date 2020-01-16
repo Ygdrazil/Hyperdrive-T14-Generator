@@ -11,7 +11,7 @@ if (isset($_GET["id"])){
   if($_GET["id"] == "menus"){
     echo '<ul class="menuRendu"> ';
     for ($i=1; $i <= 3 ; $i++) { 
-      echo "<li class='liRendu'><a href='$i' class='lienRendu'>$i</a></li>";
+      echo "<li class='liRendu'><a href='#' class='lienRendu'>$i</a></li>";
     }
     echo '</ul>';
   }
@@ -67,7 +67,7 @@ if (isset($_GET["id"])){
   elseif($_GET["id"] == "menus"){
    echo '<ul class="menuRendu"> ';
    for ($i=1; $i <= 3 ; $i++) { 
-    echo "\n\t<li class='liRendu'>\n\t\t<a href='$i' class='lienRendu'>$i</a>\n\t</li>\n";
+    echo "\n\t<li class='liRendu'>\n\t\t<a href='#' class='lienRendu'>$i</a>\n\t</li>\n";
   }
   echo '</ul>';
 }
