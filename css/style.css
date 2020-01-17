@@ -85,6 +85,15 @@ nav {
   background-color: black;
 }
 
+#ico{
+  position: absolute;
+}
+@media only screen and (max-width:740px){
+  #ico{
+    top: -70px;
+  }
+}
+
 nav > ul {
   display: flex;
   justify-content:center;

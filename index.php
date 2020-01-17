@@ -18,7 +18,7 @@
     </header>
     <div id="main">
       <nav>
-      	<img src="img/light_logo.png" width="20px" height="20px">
+      	<img src="img/light_logo.ico" width="70px" height="60px" id="ico">
         <ul class="nav">
           <a href="index.php?id=home" data-target="0">
             <li <?php if(!empty($_GET)){ if($_GET["id"] == "home") echo "class='btnMenuActive'"; } ?>>
