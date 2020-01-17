@@ -257,7 +257,7 @@ if(isset($_POST) and !empty($_POST)){
         echo "\n\t\tmargin-bottom:".$_POST["margin-bottom"]."px;";
       }
       if(!empty($_POST["margin-right"])){
-        echo "\n\t\tmargin-right:".$_POST["margin-right"]."ox;";
+        echo "\n\t\tmargin-right:".$_POST["margin-right"]."px;";
       }
       if(!empty($_POST["margin-left"])){
         echo "\n\tmargin-left:".$_POST["margin-left"]."px;";
