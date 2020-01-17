@@ -27,7 +27,7 @@
           </a>
           <a href="index.php?id=tuto" data-target="1">
             <li <?php if(!empty($_GET)){ if($_GET["id"] == "tuto") echo "class='btnMenuActive'"; } ?>>
-              Tutoriels
+              Tutoriel
             </li>
           </a>
           <a href="index.php?id=liens" data-target="2">
