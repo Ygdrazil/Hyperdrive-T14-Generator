@@ -108,7 +108,8 @@
     
 
     <footer>
-      &copy IUT Annecy 2020
+      <p>&copy IUT Annecy 2020</p>
+      <a href="https://github.com/Ygdrazil/Hyperdrive-T14-Generator"><img src="css/assets/github.png"></a>
     </footer>
 
     <!-- Scripts -->

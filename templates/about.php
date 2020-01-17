@@ -126,5 +126,5 @@
 		</iframe>
 	</section>
 
-
+	<div>Icône GitHub fait par <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> de <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </section>
