@@ -88,11 +88,6 @@ nav {
 #ico{
   position: absolute;
 }
-@media only screen and (max-width:740px){
-  #ico{
-    top: -70px;
-  }
-}
 
 nav > ul {
   display: flex;
@@ -352,6 +347,7 @@ footer{
   #websiteTitle {
     font-size: 25px;
   }
+  
 
   /**************************************** Menu Responsive */
 
@@ -365,6 +361,10 @@ footer{
   nav > ul {
     flex-direction: column;
     justify-content: left;
+  }
+
+  #ico{
+    display: none;
   }
 
   nav > ul > a:first-child > li {
