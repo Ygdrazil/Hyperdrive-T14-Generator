@@ -72,29 +72,11 @@
 	</section>
 
 	<section>
-
-		<h2>Mais qu'est ce que c'est que ceci ?</h2>
-		<p>
-			Ceci est un des sites les plus ambitieux au monde !<br>
-			Fait en moins d'une semaine par des techniciens qui voulaient montrer au monde leurs multiples talents !
-		</p>
-		<br>
-		<a href="https://www.youtube.com/watch?v=3Xl0Qr0uXuY">
-			La preuve
-		</a>
-		<br>
-		<br>
-		<iframe src="http://www.youtube.com/embed/3Xl0Qr0uXuY" height=300 width=500>
-			Votre navigateur ne prend pas en compte les vidéos 
-		</iframe>
-	</section>
-
-	<section>
 		<h2>
 			Curriculum Vitae
 		</h2>
 		<p>Tout cela n'est pas que pure dévotion de notre part ! Nous voulons aussi donner un coup de pouce à des collègues ! <br />
-		Vous pourrez trouver leurs CV ci-dessous, ils recherchent du travail et sont pas peu doués !</p>
+		Vous pourrez trouver leurs CV ci-dessous, ils recherchent du travail et ne sont pas peu doués !</p>
 		<table cellspacing="10px" cellpadding="10px;">
 			<tr>
 				<th>
@@ -124,6 +106,24 @@
 			 	}
 			  ?>
 		</table>
+	</section>
+
+	<section>
+
+		<h2>La soute du vaisseau</h2>
+		<p>
+			Ici nous avons mis tout et n'importe quoi ! C'est un peu la soute du vaisseau !<br/>
+			Comme par exemple :
+		</p>
+		<br>
+		<a href="https://www.youtube.com/watch?v=3Xl0Qr0uXuY">
+			Ici une petite vidéo bien rigolote ! (En plus c'est nos collègues qui jouent dedans !)
+		</a>
+		<br>
+		<br>
+		<iframe src="http://www.youtube.com/embed/3Xl0Qr0uXuY" height=300 width=500>
+			Votre navigateur ne prend pas en compte les vidéos Youtube intégrés.
+		</iframe>
 	</section>
 
 
